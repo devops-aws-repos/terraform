@@ -11,8 +11,8 @@ resource "aws_instance" "web" {
 #  id ="sg-050ef4889bc4a5a82"
 #}
 
-resource "aws_security_group" "web_sg" {
-  name        = var.sg-name
+resource "aws_security_group" "web_sg" { #this is for terraform reference
+  name        = var.sg-name # this is for aws reference
   description = var.sg-description
   #vpc_id      = data.aws_vpc.default.id
 
